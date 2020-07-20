@@ -25,8 +25,7 @@ import com.vaadin.client.ui.ShortcutActionHandler;
 import com.vaadin.client.ui.orderedlayout.Slot;
 import com.vaadin.client.ui.orderedlayout.VAbstractOrderedLayout;
 
-public class CubaOrderedActionsLayoutWidget extends VAbstractOrderedLayout
-        implements ShortcutActionHandler.ShortcutActionHandlerOwner {
+public class CubaOrderedActionsLayoutWidget extends VAbstractOrderedLayout {
     protected ShortcutActionHandler shortcutHandler;
 
     public CubaOrderedActionsLayoutWidget() {
@@ -71,10 +70,5 @@ public class CubaOrderedActionsLayoutWidget extends VAbstractOrderedLayout
         slot.setLayout(this);
         slot.setWidget(widget);
         return slot;
-    }
-
-    @Override
-    public ShortcutActionHandler getShortcutActionHandler() {
-        return shortcutHandler;
     }
 }
